@@ -13,6 +13,7 @@ func Plugin(ctx context.Context) *plugin.Plugin {
 		DefaultTransform: transform.FromCamel(),
 		TableMap: map[string]*plugin.Table{
 			"pokemon_pokemon": tablePokemonPokemon(ctx),
+			"pokemon_location": tablePokemonLocation(ctx),
 		},
 	}
 	return p
